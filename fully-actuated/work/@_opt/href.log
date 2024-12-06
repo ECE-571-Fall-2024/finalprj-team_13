@@ -1,0 +1,8 @@
+BEGIN 3:TrafficSignalInterface:fast__2:work
+    light :  1:FullyActuatedTrafficController_tb:fast:work 1:FullyActuatedTrafficController:fast:work
+    ped_light :  1:FullyActuatedTrafficController_tb:fast:work 1:FullyActuatedTrafficController:fast:work
+END 
+BEGIN 3:TrafficSignalInterface:fast__1:work
+    ped_light :  1:FullyActuatedTrafficController_tb:fast:work 1:FullyActuatedTrafficController:fast:work
+    light :  1:FullyActuatedTrafficController_tb:fast:work 1:FullyActuatedTrafficController:fast:work
+END 

@@ -1,0 +1,10 @@
+BEGIN 3:TrafficSignalInterface:fast__1:work
+    crossing :  1:pretimed_tb:fast:work 1:PretimedTrafficController:fast:work
+    pedestrian :  1:pretimed_tb:fast:work 1:PretimedTrafficController:fast:work
+    road :  1:pretimed_tb:fast:work 1:PretimedTrafficController:fast:work
+END 
+BEGIN 3:TrafficSignalInterface:fast__2:work
+    road :  1:pretimed_tb:fast:work 1:PretimedTrafficController:fast:work
+    pedestrian :  1:pretimed_tb:fast:work 1:PretimedTrafficController:fast:work
+    crossing :  1:pretimed_tb:fast:work 1:PretimedTrafficController:fast:work
+END 

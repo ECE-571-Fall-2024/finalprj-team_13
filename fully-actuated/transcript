@@ -1,0 +1,61 @@
+# //  Questa Sim-64
+# //  Version 2024.2 linux_x86_64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+do run.do
+# QuestaSim-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 17:55:25 on Dec 05,2024
+# vlog -reportprogress 300 "+define+DEBUG" FullyActuatedTrafficController.sv FullyActuatedTrafficController_tb.sv 
+# -- Compiling package TrafficPackage
+# -- Compiling interface TrafficSignalInterface
+# -- Compiling module FullyActuatedTrafficController
+# -- Importing package TrafficPackage
+# -- Compiling module FullyActuatedTrafficController_tb
+# 
+# Top level modules:
+# 	FullyActuatedTrafficController_tb
+# End time: 17:55:26 on Dec 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim work.FullyActuatedTrafficController_tb 
+# Start time: 17:55:26 on Dec 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.TrafficPackage(fast)
+# Loading work.FullyActuatedTrafficController_tb(fast)
+# End time: 17:55:31 on Dec 05,2024, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.FullyActuatedTrafficController_tb 
+# Start time: 17:55:31 on Dec 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "FullyActuatedTrafficController(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.FullyActuatedTrafficController_tb(fast)
+# Loading work.TrafficSignalInterface(fast__1)
+# Loading work.TrafficSignalInterface(fast__2)
+# Loading work.TrafficPackage(fast)
+# Loading work.FullyActuatedTrafficController(fast)
+# At time                20000: Test Passed for state {001, 100, 001, 100}
+# At time               270000: Test Passed for state {010, 100, 100, 100}
+# At time               320000: Test Passed for state {100, 001, 100, 001}
+# At time               600000: Test Passed for state {100, 010, 100, 100}
+# At time               650000: Test Passed for state {001, 100, 001, 100}
+# At time               900000: Test Passed for state {010, 100, 100, 100}
+# At time               950000: Test Passed for state {100, 001, 100, 001}
+# At time              1200000: Test Passed for state {100, 010, 100, 100}
+# At time              1250000: Test Passed for state {100, 100, 100, 100}
+# ** Note: $finish    : FullyActuatedTrafficController_tb.sv(95)
+#    Time: 1250 sec  Iteration: 0  Instance: /FullyActuatedTrafficController_tb
+# 1
+# Break in Module FullyActuatedTrafficController_tb at FullyActuatedTrafficController_tb.sv line 95
